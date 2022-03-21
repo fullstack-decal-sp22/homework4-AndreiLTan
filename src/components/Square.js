@@ -1,10 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import './styles/Square.css';
 
-function Square() {
+function Square(props) {
     return (
-        <button className="square">
-            {this.props.value}
+        <button 
+        className="square"
+        onClick={props.onClick}>
+            {props.value}
         </button>
     )
 }
